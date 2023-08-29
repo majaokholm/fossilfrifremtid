@@ -5,14 +5,13 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <img alt="fossilfri fremtid logo" class="logo" src="@/assets/FossilfriFremtid_SoMe_blå_01.jpg" width="125" height="125" />
 
     <div class="wrapper">
       <HelloWorld msg="Wait for it!" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
       </nav>
     </div>
   </header>
