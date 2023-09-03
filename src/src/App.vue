@@ -60,7 +60,6 @@ header {
 footer{
   background-color: #222222;
   width: 100%;
-  font-size: 1rem;
   text-align: center;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -86,7 +85,6 @@ footer a:first-of-type {
 
 nav {
   width: 100%;
-  font-size: 1rem;
   text-align: center;
   margin-top: 2rem;
 }

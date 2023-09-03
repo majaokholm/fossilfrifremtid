@@ -14,9 +14,6 @@
   </template>
   
   <style scoped>
-    h1{
-      font-weight: bold;
-    }
     .button-container{
       display: none; /* udkommentér, når borgerforslaget er oppe og link er indsat */
       margin-top: 4em;

@@ -12,6 +12,10 @@ a,
   transition: 0.4s;
 }
 
+h1, h2, h3{
+  font-weight: bold;
+}
+
 .view-container{
   height: 100vh;
   display: flex;
@@ -38,5 +42,9 @@ a,
     /* display: grid;
     grid-template-columns: 1fr 1fr; */
     /* padding: 0 2rem; */
+  }
+
+  .view-container{
+    padding: 0 12em;
   }
 }
