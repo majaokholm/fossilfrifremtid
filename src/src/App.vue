@@ -1,28 +1,55 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import { RouterLink } from 'vue-router'
+import AboutEllyLukeView from './views/AboutEllyLukeView.vue'
+import AboutFossilfriFremtidView from './views/AboutFossilfriFremtidView.vue'
+import ActivityView from './views/ActivityView.vue'
+import ContactView from './views/ContactView.vue'
+import TopView from './views/TopView.vue'
 </script>
 
 <template>
   <header>
-    <img alt="fossilfri fremtid logo" class="logo" src="@/assets/FossilfriFremtid_SoMe_blå_01.jpg" width="125" height="125" />
+    <RouterLink to="/#top">
+      <img alt="fossilfri fremtid logo" class="logo" src="@/assets/FossilfriFremtid_logo2_blå_transparent.png" width="125" height="125" />
+    </RouterLink>
 
     <div class="wrapper">
-      <HelloWorld msg="Wait for it!" />
-
       <nav>
-        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/#om-fossilfri-fremtid">Fossilfri fremtid</RouterLink>
+        <RouterLink to="/#om-elly-luke">Elly-Luke</RouterLink>
+        <RouterLink to="/#aktiviteter">Bliv aktiv</RouterLink>
+        <RouterLink to="/#kontakt">Kontakt</RouterLink>
       </nav>
     </div>
   </header>
 
-  <RouterView />
+  <main>
+    <TopView id="top"></TopView>
+    <AboutFossilfriFremtidView id="om-fossilfri-fremtid"></AboutFossilfriFremtidView>
+    <AboutEllyLukeView id="om-elly-luke"></AboutEllyLukeView>
+    <ActivityView id="aktiviteter"></ActivityView>
+    <ContactView id="kontakt"></ContactView>
+  </main>
+
+  <footer>
+    <div class="wrapper">
+      <RouterLink to="/#om-fossilfri-fremtid">Fossilfri fremtid</RouterLink>
+      <RouterLink to="/#om-elly-luke">Elly-Luke</RouterLink>
+      <RouterLink to="/#aktiviteter">Bliv aktiv</RouterLink>
+      <RouterLink to="/#kontakt">Kontakt</RouterLink>
+    </div>
+  </footer>
 </template>
 
 <style scoped>
 header {
+  background-color: steelblue;
+  box-sizing: border-box;
+  padding: 1em 2em;
   line-height: 1.5;
   max-height: 100vh;
+  position: fixed;
+  width: 100%;
 }
 
 .logo {
@@ -30,15 +57,40 @@ header {
   margin: 0 auto 2rem;
 }
 
+footer{
+  background-color: #222222;
+  width: 100%;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+footer a.router-link-exact-active {
+  color: white;
+}
+
+footer a.router-link-exact-active:hover {
+  background-color: transparent;
+}
+
+footer a {
+  display: inline-block;
+  padding: 0 1rem;
+  border-left: 1px solid var(--color-border);
+}
+
+footer a:first-of-type {
+  border: 0;
+}
+
 nav {
   width: 100%;
-  font-size: 12px;
   text-align: center;
   margin-top: 2rem;
 }
 
 nav a.router-link-exact-active {
-  color: var(--color-text);
+  color: white;
 }
 
 nav a.router-link-exact-active:hover {
@@ -68,17 +120,19 @@ nav a:first-of-type {
 
   header .wrapper {
     display: flex;
-    place-items: flex-start;
     flex-wrap: wrap;
+    width: 100%;
   }
 
   nav {
     text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
     padding: 1rem 0;
     margin-top: 1rem;
+    display: flex;
+  }
+
+  nav a{
+    margin-left: auto;
   }
 }
 </style>
