@@ -5,9 +5,11 @@ import AboutFossilfriFremtidView from './views/AboutFossilfriFremtidView.vue'
 import ActivityView from './views/ActivityView.vue'
 import ContactView from './views/ContactView.vue'
 import TopView from './views/TopView.vue'
+import fffLogoForskudtBlue from '@/assets/FossilfriFremtid_logo1_blå.png'
 </script>
 
 <template>
+  <main>
   <header>
     <RouterLink to="/#top">
       <img alt="fossilfri fremtid logo" class="logo" src="@/assets/FossilfriFremtid_logo2_blå_transparent.png" width="125" height="125" />
@@ -23,7 +25,7 @@ import TopView from './views/TopView.vue'
     </div>
   </header>
 
-  <main>
+  
     <TopView id="top"></TopView>
     <AboutFossilfriFremtidView id="om-fossilfri-fremtid"></AboutFossilfriFremtidView>
     <AboutEllyLukeView id="om-elly-luke"></AboutEllyLukeView>
@@ -33,6 +35,7 @@ import TopView from './views/TopView.vue'
 
   <footer>
     <div class="wrapper">
+      <img class="footer-logo" :src="fffLogoForskudtBlue" alt="fossilfri fremtid logo"/>
       <RouterLink to="/#om-fossilfri-fremtid">Fossilfri fremtid</RouterLink>
       <RouterLink to="/#om-elly-luke">Elly-Luke</RouterLink>
       <RouterLink to="/#aktiviteter">Bliv aktiv</RouterLink>
@@ -42,14 +45,19 @@ import TopView from './views/TopView.vue'
 </template>
 
 <style scoped>
+main {
+  padding: 0;
+}
+
 header {
   background-color: steelblue;
   box-sizing: border-box;
   padding: 1em 2em;
   line-height: 1.5;
   max-height: 100vh;
-  position: fixed;
+  position: sticky;
   width: 100%;
+  top:0;
 }
 
 .logo {
@@ -62,7 +70,14 @@ footer{
   width: 100%;
   text-align: center;
   padding-top: 1em;
-  padding-bottom: 1em;
+  padding-bottom: 6em;
+}
+
+footer .footer-logo {
+  width: 20%;
+  height: auto;
+  padding-left: 1em;
+  float: left;
 }
 
 footer a.router-link-exact-active {
