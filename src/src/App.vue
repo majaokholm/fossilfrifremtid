@@ -45,14 +45,14 @@ header {
   box-sizing: border-box;
   padding: 1em 2em;
   line-height: 1.5;
-  max-height: 100vh;
-  position: sticky;
+  height: 150px;
+  position: fixed;
   width: 100%;
   top:0;
 }
 
 .logo {
-  display: block;
+  display: none;
   margin: 0 auto 2rem;
 }
 
@@ -121,6 +121,7 @@ nav a:first-of-type {
   }
 
   .logo {
+    display: block;
     margin: 0 2rem 0 0;
   }
 
