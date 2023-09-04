@@ -1,3 +1,6 @@
+<script setup lang="ts">
+</script>
+
 <template>
     <div class="view-container container-bg">
       <div>
@@ -11,8 +14,7 @@
         Desuden vil den energi, der vil blive brugt på at udvinde gas fra området, udlede 400.000 ton CO2. 
         Vi har ikke råd til at indvinde ny fossil energi. Hverken økonomisk eller klimamæssigt.
         Fossilfri Fremtid arbejder for at stoppe Elly-Luke projektet fra at blive en realitet og stoppe alle fremtidige fossile projekter i Nordsøen. 
-        Læs ministeriets egen tekniske gennemgang af udbudsrunden her. 
-      <!--Indsæt læs-mere-knap her--> 
+        Læs ministeriets egen tekniske gennemgang af udbudsrunden <a href="https://www.ft.dk/samling/20222/almdel/KEF/bilag/261/2696582.pdf" target="_blank">her</a>. 
       </div>
     </div>
   </template>
