@@ -1,12 +1,23 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import AboutEllyLukeView from '../views/AboutEllyLukeView.vue'
+import AboutFossilfriFremtidView from '../views/AboutFossilfriFremtidView.vue'
+import ActivityView from '../views/ActivityView.vue'
+import ContactView from '../views/ContactView.vue'
+import TopView from '../views/TopView.vue'
 </script>
 
 <template>
   <main>
-    <!-- <RouterView /> -->
-    <h1 style="margin: 1000px 0">I'm a spacer</h1>
-    <h1 id="om4">HELLO!</h1>
-    <!-- <AboutView id="om"></AboutView> -->
+    <TopView id="top"></TopView>
+    <AboutFossilfriFremtidView id="om-fossilfri-fremtid"></AboutFossilfriFremtidView>
+    <AboutEllyLukeView id="om-elly-luke"></AboutEllyLukeView>
+    <ActivityView id="aktiviteter"></ActivityView>
+    <ContactView id="kontakt"></ContactView>
   </main>
 </template>
+
+<style scoped>
+main {
+  padding: 0;
+}
+</style>

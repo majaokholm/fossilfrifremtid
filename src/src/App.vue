@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { RouterLink } from 'vue-router'
+import { RouterLink, RouterView } from 'vue-router'
 import AboutEllyLukeView from './views/AboutEllyLukeView.vue'
 import AboutFossilfriFremtidView from './views/AboutFossilfriFremtidView.vue'
 import ActivityView from './views/ActivityView.vue'
@@ -9,8 +9,7 @@ import fffLogoForskudtBlue from '@/assets/FossilfriFremtid_logo1_blå.png'
 </script>
 
 <template>
-  <main>
-  <header>
+    <header>
     <RouterLink to="/#top">
       <img alt="fossilfri fremtid logo" class="logo" src="@/assets/FossilfriFremtid_logo2_blå_transparent.png" width="125" height="125" />
     </RouterLink>
@@ -24,16 +23,8 @@ import fffLogoForskudtBlue from '@/assets/FossilfriFremtid_logo1_blå.png'
       </nav>
     </div>
   </header>
-
-  
-    <TopView id="top"></TopView>
-    <AboutFossilfriFremtidView id="om-fossilfri-fremtid"></AboutFossilfriFremtidView>
-    <AboutEllyLukeView id="om-elly-luke"></AboutEllyLukeView>
-    <ActivityView id="aktiviteter"></ActivityView>
-    <ContactView id="kontakt"></ContactView>
-  </main>
-
-  <footer>
+    <RouterView></RouterView>
+    <footer>
     <div class="wrapper">
       <img class="footer-logo" :src="fffLogoForskudtBlue" alt="fossilfri fremtid logo"/>
       <RouterLink to="/#om-fossilfri-fremtid">Fossilfri fremtid</RouterLink>
@@ -54,14 +45,14 @@ header {
   box-sizing: border-box;
   padding: 1em 2em;
   line-height: 1.5;
-  max-height: 100vh;
-  position: sticky;
+  height: 150px;
+  position: fixed;
   width: 100%;
   top:0;
 }
 
 .logo {
-  display: block;
+  display: none;
   margin: 0 auto 2rem;
 }
 
@@ -130,6 +121,7 @@ nav a:first-of-type {
   }
 
   .logo {
+    display: block;
     margin: 0 2rem 0 0;
   }
 
