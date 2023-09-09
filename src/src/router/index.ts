@@ -8,7 +8,7 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView
-    },
+    }
   ],
   scrollBehavior (to, from, savedPosition) {
     return {

@@ -8,7 +8,7 @@
 a,
 .green {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
+  color: #474CB5;
   transition: 0.4s;
 }
 
@@ -17,16 +17,16 @@ h1, h2, h3{
 }
 
 .view-container{
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   box-sizing: border-box;
-  padding: 0 2em;
+  padding: 180px 2em 4em;
 }
 
 @media (hover: hover) {
   a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+    background-color: #96D2FF;
   }
 }
 
@@ -45,6 +45,6 @@ h1, h2, h3{
   }
 
   .view-container{
-    padding: 0 12em;
+    padding: 2em 12em;
   }
 }

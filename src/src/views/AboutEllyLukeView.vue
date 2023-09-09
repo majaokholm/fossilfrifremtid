@@ -27,4 +27,17 @@
 .container-bg{
       background-color:#FFB48E;
     }
+
+    .read-more-button{
+      border: 2px solid black;
+      border-radius: 2em;
+      margin-bottom: 0.5em;
+      margin-top: 0.5em;
+      color: black;
+      cursor: pointer;
+      font-size: 1.25em;
+      font-weight: bold;
+      flex-wrap: nowrap;
+      padding: 1em;
+    }
 </style>
