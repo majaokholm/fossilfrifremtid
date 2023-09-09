@@ -4,6 +4,7 @@ import AboutEllyLukeView from './views/AboutEllyLukeView.vue'
 import AboutFossilfriFremtidView from './views/AboutFossilfriFremtidView.vue'
 import ActivityView from './views/ActivityView.vue'
 import ContactView from './views/ContactView.vue'
+import HvemStaarBagView from './views/HvemStaarBag.vue'
 import TopView from './views/TopView.vue'
 import fffLogoForskudtBlue from '@/assets/FossilfriFremtid_logo1_blå.png'
 </script>
@@ -19,6 +20,7 @@ import fffLogoForskudtBlue from '@/assets/FossilfriFremtid_logo1_blå.png'
       <nav>
         <RouterLink to="/#om-fossilfri-fremtid">Fossilfri fremtid</RouterLink>
         <RouterLink to="/#om-elly-luke">Elly-Luke</RouterLink>
+        <RouterLink to="/#hvem-staar-bag">Hvem strår bag</RouterLink>
         <RouterLink to="/#aktiviteter">Bliv aktiv</RouterLink>
         <RouterLink to="/#kontakt">Kontakt</RouterLink>
       </nav>
@@ -29,6 +31,7 @@ import fffLogoForskudtBlue from '@/assets/FossilfriFremtid_logo1_blå.png'
     <TopView id="top"></TopView>
     <AboutFossilfriFremtidView id="om-fossilfri-fremtid"></AboutFossilfriFremtidView>
     <AboutEllyLukeView id="om-elly-luke"></AboutEllyLukeView>
+    <HvemStaarBagView id="hvem-staar-bag"></HvemStaarBagView>
     <ActivityView id="aktiviteter"></ActivityView>
     <ContactView id="kontakt"></ContactView>
   </main>
@@ -38,6 +41,7 @@ import fffLogoForskudtBlue from '@/assets/FossilfriFremtid_logo1_blå.png'
       <img class="footer-logo" :src="fffLogoForskudtBlue" alt="fossilfri fremtid logo"/>
       <RouterLink to="/#om-fossilfri-fremtid">Fossilfri fremtid</RouterLink>
       <RouterLink to="/#om-elly-luke">Elly-Luke</RouterLink>
+      <RouterLink to="/#hvem-staar-bag">Hvem strår bag</RouterLink>
       <RouterLink to="/#aktiviteter">Bliv aktiv</RouterLink>
       <RouterLink to="/#kontakt">Kontakt</RouterLink>
     </div>
