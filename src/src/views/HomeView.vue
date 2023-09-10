@@ -5,6 +5,7 @@ import HvemStaarBagView from '../views/HvemStaarBag.vue'
 import ActivityView from '../views/ActivityView.vue'
 import ContactView from '../views/ContactView.vue'
 import TopView from '../views/TopView.vue'
+
 </script>
 
 <template>

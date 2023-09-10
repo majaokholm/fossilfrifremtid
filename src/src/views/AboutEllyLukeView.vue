@@ -19,6 +19,11 @@
     </p>
 
     <!--Indsæt læs-mere-knap her--> 
+    <div class="button-container">
+        <RouterLink to="om-elly-luke">
+          <button href="" class="read-more-button">LÆS MERE</button>
+        </RouterLink>
+    </div> 
     </div>
   </div>
 </template>
