@@ -19,6 +19,6 @@
   
   <style scoped>
   .container-bg{
-        background-color:#FFB48E;
+        background-color:#FFF8D8;
       }
   </style>
