@@ -8,6 +8,13 @@
       <p>Fossilfri Fremtid arbejder først for at stoppe det nuværende olie- og gasudbud ved Elly-Luke feltet i Nordsøen.</p>
       <h3>Mål 2</h3>
       <p>Fossilfri Fremtid arbejder dernæst for at partierne bag Nordsøaftalen fra 2020 genåbner aftalen og fjerner muligheden for fremtidig fossil ekspansion.</p>
+    
+      <div class="button-container">
+        <RouterLink to="background">
+          <button href="" class="read-more-button">Baggrund</button>
+        </RouterLink>
+      </div>
+
     </div>
   </div>
 </template>
@@ -21,5 +28,24 @@
   }
   .container-bg{
       background-color:#FFF8D8;
+    }
+</style>
+
+<style scoped>
+.container-bg{
+      background-color:#FFB48E;
+    }
+
+    .read-more-button{
+      border: 2px solid black;
+      border-radius: 2em;
+      margin-bottom: 0.5em;
+      margin-top: 0.5em;
+      color: black;
+      cursor: pointer;
+      font-size: 1.25em;
+      font-weight: bold;
+      flex-wrap: nowrap;
+      padding: 1em;
     }
 </style>
