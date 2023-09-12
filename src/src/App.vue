@@ -17,10 +17,10 @@ import fffLogoForskudtBlue from '@/assets/FossilfriFremtid_logo1_blå.png'
 
     <div class="wrapper">
       <nav>
-        <RouterLink to="/#om-fossilfri-fremtid">Fossilfri fremtid</RouterLink>
-        <RouterLink to="/#om-elly-luke">Elly-Luke</RouterLink>
-        <RouterLink to="/#hvem-staar-bag">Hvem strår bag</RouterLink>
-        <RouterLink to="/#aktiviteter">Bliv aktiv</RouterLink>
+        <RouterLink to="/#om-fossilfri-fremtid">Hvad er Fossilfri Fremtid?</RouterLink>
+        <RouterLink to="/#om-elly-luke">Hvad er Elly-Luke?</RouterLink>
+        <RouterLink to="/#hvem-staar-bag">Hvem står bag?</RouterLink>
+        <RouterLink to="/#aktiviteter">Bliv en del af kampagnen</RouterLink>
         <RouterLink to="/#kontakt">Kontakt</RouterLink>
       </nav>
     </div>
@@ -30,10 +30,10 @@ import fffLogoForskudtBlue from '@/assets/FossilfriFremtid_logo1_blå.png'
     <footer>
     <div class="wrapper">
       <img class="footer-logo" :src="fffLogoForskudtBlue" alt="fossilfri fremtid logo"/>
-      <RouterLink to="/#om-fossilfri-fremtid">Fossilfri fremtid</RouterLink>
-      <RouterLink to="/#om-elly-luke">Elly-Luke</RouterLink>
-      <RouterLink to="/#hvem-staar-bag">Hvem strår bag</RouterLink>
-      <RouterLink to="/#aktiviteter">Bliv aktiv</RouterLink>
+      <RouterLink to="/#om-fossilfri-fremtid">Hvad er Fossilfri Fremtid?</RouterLink>
+      <RouterLink to="/#om-elly-luke">Hvad er Elly-Luke?</RouterLink>
+      <RouterLink to="/#hvem-staar-bag">Hvem står bag?</RouterLink>
+      <RouterLink to="/#aktiviteter">Bliv en del af kampagnen</RouterLink>
       <RouterLink to="/#kontakt">Kontakt</RouterLink>
     </div>
   </footer>

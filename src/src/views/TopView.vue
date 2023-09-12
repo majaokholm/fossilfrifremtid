@@ -2,13 +2,35 @@
     <div class="view-container container-bg" style="justify-content: center;">
 
       <div class="content-container">
-        <h1>Den danske regering vil åbne for olie- og gasudvinding i Elly-Luke-feltet.</h1>
+        <h1>Den danske regering vil åbne for ny olie- og gasudvinding i Elly-Luke-feltet.</h1>
         <h1>Fossilfri Fremtid kæmper for at stoppe det.</h1>
+        <br>
+        <p>Hvis vi vil sikre et beboeligt klima i fremtiden, kan vi ikke tillade nye olie og gas projekter. </p>
+        <br>
+
+        <p>Her på siden kan du læse mere om Elly-Luke-feltet, Fossilfri Fremtid, og hvad du kan gøre for at være med.</p>
+
+        <!-- TODO: Indsæt borgerforslag i href -->
         <div class="button-container">
-          <a href="" class="sign-proposal-button">SKRIV UNDER</a> <!--link til borgerforslag skal indsættes i href-->
+          <a href="" class="sign-proposal-button">SKRIV UNDER</a>
           <p class="sign-proposal-button-label">Skriv under på borgerforslaget.</p>
         </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <p>Instagram: <a href = "https://www.instagram.com/fossilfrifremtid/">fossilfrifremtid IG</a></p>
+        <p>Facebook: <a href = "https://www.facebook.com/profile.php?id=61550554145147">fossilfrifremtid FB</a></p>
+        <p>Telefon: 31 52 31 21</p>
+        <p>E-mail: <a href = "mailto: fossilfrifremtid@gmail.com">fossilfrifremtid@gmail.com</a></p>
+
       </div>
+
+
   
     </div>
   </template>
