@@ -5,13 +5,7 @@
 <template>
     <div class="view-container container-bg">
       <div>
-        <br>
-        <br>
-        <br>
-        <br>
       <h1>Baggrund</h1>     
-        <!-- TODO fix bug: både h1 og den første <p> er skjult på siden, den starter ved "Det internationale Energiagentur...". Hotfixer med br -->
-
         <p>
         Ifølge den gældende <a href = "https://www.pnas.org/doi/10.1073/pnas.2108146119">klimaforskning</a> skal der ske en drastisk reduktion af vores udledning af drivhusgasser i dette årti, hvis vi skal undgå de mest katastrofale konsekvenser af klimakrisen. 
         </p>
