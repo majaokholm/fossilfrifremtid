@@ -22,7 +22,7 @@
         <RouterLink to="aktiviteter-organisation">
           <button href="" class="read-more-button">ORGANISATION</button>
         </RouterLink>
-    </div> 
+      </div> 
       <!-- <p>Skriv en mail til <a href = "mailto: fossilfrifremtid@gmail.com">fossilfrifremtid@gmail.com</a> eller send en sms til 31 52 31 21. 
       </p>
       <br>
@@ -47,7 +47,9 @@
     }
 .button-container {
       display: flex;
-      gap: 10px; /* Adjust the gap between buttons as needed */
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width:100%;
     }
 
     .read-more-button{
