@@ -45,6 +45,7 @@ h1, h2, h3{
   }
 
   .view-container{
-    padding: 2em 12em;
+    padding-left: 12em;
+    padding-right: 12em;
   }
 }
