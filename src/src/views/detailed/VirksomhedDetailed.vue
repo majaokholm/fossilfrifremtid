@@ -11,7 +11,7 @@
       </p>
       <br>
 
-      <p>Skriv en mail til <a href = "mailto: fossilfrifremtid@gmail.com">fossilfrifremtid@gmail.com</a>, så finder vi en måde hvorpå I kan være med. 
+      <p>Skriv en mail til <a href = "mailto: tagdel@fossilfrifremtid.dk">tagdel@fossilfrifremtid.dk</a>, så finder vi en måde hvorpå I kan være med. 
       </p>
       <br>
 

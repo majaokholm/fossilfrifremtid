@@ -10,7 +10,7 @@
       <p>  Vil du være med til at stoppe ny fossil udvinding? Vi har brug for dig! 
       </p>
       <br> 
-      <p>Skriv en mail til <a href = "mailto: fossilfrifremtid@gmail.com">fossilfrifremtid@gmail.com</a> eller send en sms til 31 52 31 21. 
+      <p>Skriv en mail til <a href = "mailto: tagdel@fossilfrifremtid.dk">tagdel@fossilfrifremtid.dk</a> eller send en sms til 31 52 31 21. 
       </p>
       <br>
       <p>Vores styrke er, at vi er mange og at vi kommer med forskellige baggrunde. Der er brug for dig, lige meget om du har deltaget i en kampagne før, eller om du er helt grøn. Om du har lidt eller meget tid. Lige meget hvor du bor, din alder, etnicitet, seksualitet eller politiske overbevisning. </p>

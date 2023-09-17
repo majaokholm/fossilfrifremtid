@@ -13,7 +13,7 @@
         <!-- TODO: Indsæt borgerforslag i href -->
         <div class="button-container">
           <a href="" class="sign-proposal-button">SKRIV UNDER</a>
-          <p class="sign-proposal-button-label">Skriv under på borgerforslaget.</p>
+          <p class="sign-proposal-button-label">Skriv under på <a href= "https://www.borgerforslag.dk/se-og-stoet-forslag/?Id=FT-15740">borgerforslaget.</a></p>
         </div>
 
         <br>
@@ -26,7 +26,7 @@
         <p>Instagram: <a href = "https://www.instagram.com/fossilfrifremtid/">fossilfrifremtid IG</a></p>
         <p>Facebook: <a href = "https://www.facebook.com/profile.php?id=61550554145147">fossilfrifremtid FB</a></p>
         <p>Telefon: 31 52 31 21</p>
-        <p>E-mail: <a href = "mailto: fossilfrifremtid@gmail.com">fossilfrifremtid@gmail.com</a></p>
+        <p>E-mail: <a href = "mailto: tagdel@fossilfrifremtid.dk">tagdel@fossilfrifremtid.dk</a></p>
 
       </div>
 
