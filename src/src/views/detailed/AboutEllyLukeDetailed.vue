@@ -1,4 +1,5 @@
 <script setup lang="ts">
+  window.scrollTo(0, 0);
 </script>
 
 <template>
@@ -27,7 +28,7 @@
     </p>
       </div>
     </div>
-  </template>
+</template>
   
   <style scoped>
   .container-bg{
