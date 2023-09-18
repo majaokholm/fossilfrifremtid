@@ -5,7 +5,7 @@
 <template>
     <div class="view-container container-bg">
       <div>
-      <h1>Baggrund</h1>     
+      <h1>Hvad er Fossilfri Fremtid?</h1>     
         <p>
         Ifølge den gældende <a href = "https://www.pnas.org/doi/10.1073/pnas.2108146119">klimaforskning</a> skal der ske en drastisk reduktion af vores udledning af drivhusgasser i dette årti, hvis vi skal undgå de mest katastrofale konsekvenser af klimakrisen. 
         </p>
