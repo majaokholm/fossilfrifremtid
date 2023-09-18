@@ -35,6 +35,24 @@ import fffLogoForskudtBlue from '@/assets/FossilfriFremtid_logo1_blå.png'
       <RouterLink to="/#hvem-staar-bag">Hvem står bag?</RouterLink>
       <RouterLink to="/#aktiviteter">Bliv en del af kampagnen</RouterLink>
       <RouterLink to="/#kontakt">Kontakt</RouterLink>
+
+       <!-- Social media and contact links -->
+      <div class="social-media-links">
+        <a href="https://www.facebook.com/profile.php?id=61550554145147" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-facebook"></i> Facebook
+        </a>
+        <a href="https://www.instagram.com/fossilfrifremtid" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+        
+        <a href="mailto: fossilfrifremtid@gmail.com">
+          <i class="fas fa-envelope"></i> fossilfrifremtid@gmail.com
+        </a>
+        <a href="tel:+45 31 52 31 21">
+          <i class="fas fa-phone"></i> Telefon
+        </a>
+        </div>
+
     </div>
   </footer>
 </template>
