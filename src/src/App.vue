@@ -84,6 +84,8 @@ main {
 }
 
 .burger-toggled-top-bar{
+  position: fixed;
+  width: 100%;
   background-color: steelblue;
   display: flex;
   justify-content: space-between;

@@ -53,7 +53,7 @@
     }
 
     .burger-bar {
-        background-color: #444;
+        background-color: #fff;
         position: absolute;
         top: 50%;
         right: 6px;
