@@ -17,7 +17,9 @@
         </RouterLink>
       </div> -->
       <div class="button-container">
-        <a href="/background" class="read-more-link">Læs mere</a>
+         <RouterLink to="background">
+          <a href="/background" class="read-more-link">Læs mere</a>
+        </RouterLink>
       </div>
 
     </div>
