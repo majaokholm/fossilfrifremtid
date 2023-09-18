@@ -5,7 +5,7 @@
 <template>
     <div class="view-container container-bg">
       <div>
-      <h1>Elly-Luke</h1>
+      <h1>Hvad er Elly-Luke?</h1>
 
       <br>
       <p>Elly-Luke felterne ligger i Nordsøen og dækker tilsammen 160 km2. 
@@ -32,6 +32,6 @@
   
   <style scoped>
   .container-bg{
-        background-color:#FFB48E;
+        background-color:#FFF8D8;
       }
   </style>
