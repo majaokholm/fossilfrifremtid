@@ -15,31 +15,34 @@ const isMenuActive = ref(false);
 
 </script>
 
-<!-- <script lang="ts">
-  const isMenuActive: Boolean = false;
-  export default {
-  props: {isMenuActive: {type: Boolean, default: true}}
-  };
-
-  
-</script> -->
-
 <template>
-    <BurgerMenu @toggle-menu=" isMenuActive = !isMenuActive " :active="isMenuActive"></BurgerMenu>
-    <header v-if="isMenuActive">
-    <RouterLink to="/#top">
-      <img alt="fossilfri fremtid logo" class="logo" src="@/assets/FossilfriFremtid_logo2_blå_transparent.png" width="125" height="125" />
-    </RouterLink>
-
-    <div class="wrapper">
-      <nav>
-        <RouterLink to="/#om-fossilfri-fremtid">Hvad er Fossilfri Fremtid?</RouterLink>
-        <RouterLink to="/#om-elly-luke">Hvad er Elly-Luke?</RouterLink>
-        <RouterLink to="/#hvem-staar-bag">Hvem står bag?</RouterLink>
-        <RouterLink to="/#aktiviteter">Bliv en del af kampagnen</RouterLink>
-        <RouterLink to="/#kontakt">Kontakt</RouterLink>
-      </nav>
+    <div class="burger-menu" v-if="isMenuActive">
+          <nav>
+            <RouterLink to="/#om-fossilfri-fremtid">Hvad er Fossilfri Fremtid?</RouterLink>
+            <RouterLink to="/#om-elly-luke">Hvad er Elly-Luke?</RouterLink>
+            <RouterLink to="/#hvem-staar-bag">Hvem står bag?</RouterLink>
+            <RouterLink to="/#aktiviteter">Bliv en del af kampagnen</RouterLink>
+            <RouterLink to="/#kontakt">Kontakt</RouterLink>
+          </nav>
     </div>
+    <BurgerMenu @toggle-menu=" isMenuActive = !isMenuActive " :active="isMenuActive"></BurgerMenu>
+    <header>
+
+      <div class="top-bar">
+        <RouterLink to="/#top">
+          <img alt="fossilfri fremtid logo" class="logo" src="@/assets/FossilfriFremtid_logo2_blå_transparent.png" width="125" height="125" />
+        </RouterLink>
+
+        <div class="wrapper">
+          <nav>
+            <RouterLink to="/#om-fossilfri-fremtid">Hvad er Fossilfri Fremtid?</RouterLink>
+            <RouterLink to="/#om-elly-luke">Hvad er Elly-Luke?</RouterLink>
+            <RouterLink to="/#hvem-staar-bag">Hvem står bag?</RouterLink>
+            <RouterLink to="/#aktiviteter">Bliv en del af kampagnen</RouterLink>
+            <RouterLink to="/#kontakt">Kontakt</RouterLink>
+          </nav>
+        </div>
+      </div>
   </header>
   
   <RouterView></RouterView>
@@ -78,7 +81,28 @@ main {
   padding: 0;
 }
 
+.burger-menu{
+  position: fixed;
+  width: 100%;
+}
+
+.burger-menu > nav {
+  background-color: steelblue;
+}
+
 header {
+  /* background-color: steelblue;
+  box-sizing: border-box;
+  padding: 1em 2em;
+  line-height: 1.5;
+  height: 150px;
+  position: fixed;
+  width: 100%;
+  top:0; */
+  margin-top: 0;
+}
+
+.top-bar{
   background-color: steelblue;
   box-sizing: border-box;
   padding: 1em 2em;
@@ -87,6 +111,7 @@ header {
   position: fixed;
   width: 100%;
   top:0;
+  display: none;
 }
 
 .logo {
@@ -130,7 +155,9 @@ footer a:first-of-type {
 nav {
   width: 100%;
   text-align: center;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
+  display: flex;
+  flex-direction: column;
 }
 
 nav a.router-link-exact-active {
@@ -152,7 +179,13 @@ nav a:first-of-type {
 }
 
 @media (min-width: 1024px) {
-  header {
+  /* header {
+    display: flex;
+    place-items: center;
+    padding-right: calc(var(--section-gap) / 2);
+  } */
+
+  .top-bar{
     display: flex;
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
@@ -173,7 +206,7 @@ nav a:first-of-type {
     text-align: left;
     padding: 1rem 0;
     margin-top: 1rem;
-    display: flex;
+    flex-direction: row;
   }
 
   nav a{

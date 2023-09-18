@@ -42,10 +42,9 @@
 
     .burger-button {
         position: relative;
+        float: right;
         height: 30px;
         width: 40px;
-        display: block;
-        z-index: 99;
         border: 0;
         border-radius: 0;
         background-color: transparent;
@@ -62,7 +61,6 @@
         height: 3px;
         width: auto;
         margin-top: -1px;
-        transition: transform .6s cubic-bezier(.165, .84, .44, 1), opacity .3s cubic-bezier(.165, .84, .44, 1), background-color .6s cubic-bezier(.165, .84, .44, 1);
     }
 
     .burger-bar--1 {
@@ -82,20 +80,20 @@
     }
 
     .burger-menu{
-        background-color: steelblue;
+        /* background-color: steelblue; */
         padding: 1rem;
         position: fixed;
-        z-index: 2;
+        /* z-index: 2; */
         width: 100%;
     }
 
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: 1025px) {
         .burger-menu {
             display: block;
         }
     }
 
-    @media screen and (min-width: 990px) {
+    @media screen and (min-width: 1024px) {
         .burger-menu {
             display: none;
         }
