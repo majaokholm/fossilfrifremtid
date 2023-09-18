@@ -49,7 +49,7 @@
         border-radius: 0;
         background-color: transparent;
         pointer-events: all;
-        transition: transform .6s cubic-bezier(.165, .84, .44, 1);
+        margin: 1em;
     }
 
     .burger-bar {
@@ -79,17 +79,10 @@
         top: 60%;
     }
 
-    .burger-menu{
-        /* background-color: steelblue; */
-        padding: 1rem;
-        position: fixed;
-        /* z-index: 2; */
-        width: 100%;
-    }
-
     @media screen and (max-width: 1025px) {
         .burger-menu {
-            display: block;
+            display: flex;
+            justify-content: end;
         }
     }
 

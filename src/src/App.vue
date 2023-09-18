@@ -16,16 +16,18 @@ const isMenuActive = ref(false);
 </script>
 
 <template>
-    <div class="burger-menu" v-if="isMenuActive">
-          <nav>
-            <RouterLink to="/#om-fossilfri-fremtid">Hvad er Fossilfri Fremtid?</RouterLink>
-            <RouterLink to="/#om-elly-luke">Hvad er Elly-Luke?</RouterLink>
-            <RouterLink to="/#hvem-staar-bag">Hvem står bag?</RouterLink>
-            <RouterLink to="/#aktiviteter">Bliv en del af kampagnen</RouterLink>
-            <RouterLink to="/#kontakt">Kontakt</RouterLink>
-          </nav>
+    <div class="burger-toggled-top-bar">
+      <div class="burger-toggled-container">
+            <nav class="burger-toggled-nav" v-if="isMenuActive">
+              <RouterLink to="/#om-fossilfri-fremtid">Hvad er Fossilfri Fremtid?</RouterLink>
+              <RouterLink to="/#om-elly-luke">Hvad er Elly-Luke?</RouterLink>
+              <RouterLink to="/#hvem-staar-bag">Hvem står bag?</RouterLink>
+              <RouterLink to="/#aktiviteter">Bliv en del af kampagnen</RouterLink>
+              <RouterLink to="/#kontakt">Kontakt</RouterLink>
+            </nav>
+      </div>
+      <BurgerMenu @toggle-menu=" isMenuActive = !isMenuActive " :active="isMenuActive"></BurgerMenu>
     </div>
-    <BurgerMenu @toggle-menu=" isMenuActive = !isMenuActive " :active="isMenuActive"></BurgerMenu>
     <header>
 
       <div class="top-bar">
@@ -34,7 +36,7 @@ const isMenuActive = ref(false);
         </RouterLink>
 
         <div class="wrapper">
-          <nav>
+          <nav class="default-nav">
             <RouterLink to="/#om-fossilfri-fremtid">Hvad er Fossilfri Fremtid?</RouterLink>
             <RouterLink to="/#om-elly-luke">Hvad er Elly-Luke?</RouterLink>
             <RouterLink to="/#hvem-staar-bag">Hvem står bag?</RouterLink>
@@ -81,24 +83,20 @@ main {
   padding: 0;
 }
 
-.burger-menu{
-  position: fixed;
-  width: 100%;
+.burger-toggled-top-bar{
+  background-color: steelblue;
+  display: flex;
+  justify-content: space-between;
 }
 
-.burger-menu > nav {
-  background-color: steelblue;
+.burger-toggled-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 1em 4em 1em 1em;
 }
 
 header {
-  /* background-color: steelblue;
-  box-sizing: border-box;
-  padding: 1em 2em;
-  line-height: 1.5;
-  height: 150px;
-  position: fixed;
-  width: 100%;
-  top:0; */
   margin-top: 0;
 }
 
@@ -152,7 +150,7 @@ footer a:first-of-type {
   border: 0;
 }
 
-nav {
+.default-nav {
   width: 100%;
   text-align: center;
   /* margin-top: 2rem; */
@@ -168,13 +166,13 @@ nav a.router-link-exact-active:hover {
   background-color: transparent;
 }
 
-nav a {
+.default-nav a {
   display: inline-block;
   padding: 0 1rem;
   border-left: 1px solid var(--color-border);
 }
 
-nav a:first-of-type {
+.default-nav a:first-of-type {
   border: 0;
 }
 
@@ -202,14 +200,18 @@ nav a:first-of-type {
     width: 100%;
   }
 
-  nav {
+  .burger-toggled-nav{
+    display: none;
+  }
+
+  .default-nav {
     text-align: left;
     padding: 1rem 0;
     margin-top: 1rem;
     flex-direction: row;
   }
 
-  nav a{
+  .default-nav a{
     margin-left: auto;
   }
 }
