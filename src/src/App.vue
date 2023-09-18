@@ -6,11 +6,27 @@ import ActivityView from './views/ActivityView.vue'
 import ContactView from './views/ContactView.vue'
 import HvemStaarBagView from './views/HvemStaarBag.vue'
 import TopView from './views/TopView.vue'
+import BurgerMenu from './components/BurgerMenu.vue'
 import fffLogoForskudtBlue from '@/assets/FossilfriFremtid_logo1_blå.png'
+
+import { ref } from 'vue'
+
+const isMenuActive = ref(false);
+
 </script>
 
+<!-- <script lang="ts">
+  const isMenuActive: Boolean = false;
+  export default {
+  props: {isMenuActive: {type: Boolean, default: true}}
+  };
+
+  
+</script> -->
+
 <template>
-    <header>
+    <BurgerMenu @toggle-menu=" isMenuActive = !isMenuActive " :active="isMenuActive"></BurgerMenu>
+    <header v-if="isMenuActive">
     <RouterLink to="/#top">
       <img alt="fossilfri fremtid logo" class="logo" src="@/assets/FossilfriFremtid_logo2_blå_transparent.png" width="125" height="125" />
     </RouterLink>
