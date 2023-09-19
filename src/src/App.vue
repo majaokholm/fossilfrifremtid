@@ -1,22 +1,36 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import AboutEllyLukeView from './views/AboutEllyLukeView.vue'
-import AboutFossilfriFremtidView from './views/AboutFossilfriFremtidView.vue'
-import ActivityView from './views/ActivityView.vue'
-import ContactView from './views/ContactView.vue'
-import HvemStaarBagView from './views/HvemStaarBag.vue'
-import TopView from './views/TopView.vue'
+import BurgerMenu from './components/BurgerMenu.vue'
 import fffLogoForskudtBlue from '@/assets/FossilfriFremtid_logo1_blå.png'
+
+import { ref } from 'vue'
+
+const isMenuActive = ref(false);
+
 </script>
 
 <template>
-    <header>
+  <!-- header section (only one header should be visible at a time) -->
+  <header class="burger-toggled-top-bar">
+    <div class="burger-toggled-container">
+          <nav class="burger-toggled-nav" v-if="isMenuActive">
+            <RouterLink to="/#om-fossilfri-fremtid">Hvad er Fossilfri Fremtid?</RouterLink>
+            <RouterLink to="/#om-elly-luke">Hvad er Elly-Luke?</RouterLink>
+            <RouterLink to="/#hvem-staar-bag">Hvem står bag?</RouterLink>
+            <RouterLink to="/#aktiviteter">Bliv en del af kampagnen</RouterLink>
+            <RouterLink to="/#kontakt">Kontakt</RouterLink>
+          </nav>
+    </div>
+    <BurgerMenu @toggle-menu=" isMenuActive = !isMenuActive " :active="isMenuActive"></BurgerMenu>
+  </header>
+
+  <header class="top-bar">
     <RouterLink to="/#top">
       <img alt="fossilfri fremtid logo" class="logo" src="@/assets/FossilfriFremtid_logo2_blå_transparent.png" width="125" height="125" />
     </RouterLink>
 
     <div class="wrapper">
-      <nav>
+      <nav class="default-nav">
         <RouterLink to="/#om-fossilfri-fremtid">Hvad er Fossilfri Fremtid?</RouterLink>
         <RouterLink to="/#om-elly-luke">Hvad er Elly-Luke?</RouterLink>
         <RouterLink to="/#hvem-staar-bag">Hvem står bag?</RouterLink>
@@ -26,8 +40,11 @@ import fffLogoForskudtBlue from '@/assets/FossilfriFremtid_logo1_blå.png'
     </div>
   </header>
   
+  <!-- main section -->
   <RouterView></RouterView>
-    <footer>
+
+  <!-- footer section -->
+  <footer>
     <div class="wrapper">
       <img class="footer-logo" :src="fffLogoForskudtBlue" alt="fossilfri fremtid logo"/>
       <RouterLink to="/#om-fossilfri-fremtid">Hvad er Fossilfri Fremtid?</RouterLink>
@@ -62,7 +79,22 @@ main {
   padding: 0;
 }
 
-header {
+.burger-toggled-top-bar{
+  position: fixed;
+  width: 100%;
+  background-color: steelblue;
+  display: flex;
+  justify-content: space-between;
+}
+
+.burger-toggled-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 1em 4em 1em 1em;
+}
+
+.top-bar{
   background-color: steelblue;
   box-sizing: border-box;
   padding: 1em 2em;
@@ -71,6 +103,7 @@ header {
   position: fixed;
   width: 100%;
   top:0;
+  display: none;
 }
 
 .logo {
@@ -111,10 +144,11 @@ footer a:first-of-type {
   border: 0;
 }
 
-nav {
+.default-nav {
   width: 100%;
   text-align: center;
-  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 nav a.router-link-exact-active {
@@ -125,18 +159,18 @@ nav a.router-link-exact-active:hover {
   background-color: transparent;
 }
 
-nav a {
+.default-nav a {
   display: inline-block;
   padding: 0 1rem;
   border-left: 1px solid var(--color-border);
 }
 
-nav a:first-of-type {
+.default-nav a:first-of-type {
   border: 0;
 }
 
 @media (min-width: 1024px) {
-  header {
+  .top-bar{
     display: flex;
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
@@ -147,20 +181,24 @@ nav a:first-of-type {
     margin: 0 2rem 0 0;
   }
 
-  header .wrapper {
+  .wrapper {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
   }
 
-  nav {
+  .burger-toggled-nav{
+    display: none;
+  }
+
+  .default-nav {
     text-align: left;
     padding: 1rem 0;
     margin-top: 1rem;
-    display: flex;
+    flex-direction: row;
   }
 
-  nav a{
+  .default-nav a{
     margin-left: auto;
   }
 }

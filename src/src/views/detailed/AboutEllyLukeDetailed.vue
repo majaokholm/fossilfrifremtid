@@ -43,11 +43,13 @@
 .content {
   display: flex;
   flex-direction: row; /* Keep the order of text and image */
+  flex-wrap: wrap;
   align-items: center; /* Vertically center content */
 }
 
 .text {
   flex: 1; /* Allow the text to take up remaining space */
+  min-width: 500px;
 }
 
 .image {
