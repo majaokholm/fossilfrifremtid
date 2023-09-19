@@ -10,6 +10,7 @@ const isMenuActive = ref(false);
 </script>
 
 <template>
+  <!-- header section (only one header should be visible at a time) -->
   <header class="burger-toggled-top-bar">
     <div class="burger-toggled-container">
           <nav class="burger-toggled-nav" v-if="isMenuActive">
@@ -39,8 +40,11 @@ const isMenuActive = ref(false);
     </div>
   </header>
   
+  <!-- main section -->
   <RouterView></RouterView>
-    <footer>
+
+  <!-- footer section -->
+  <footer>
     <div class="wrapper">
       <img class="footer-logo" :src="fffLogoForskudtBlue" alt="fossilfri fremtid logo"/>
       <RouterLink to="/#om-fossilfri-fremtid">Hvad er Fossilfri Fremtid?</RouterLink>
