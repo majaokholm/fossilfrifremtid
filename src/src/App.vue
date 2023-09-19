@@ -1,11 +1,5 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import AboutEllyLukeView from './views/AboutEllyLukeView.vue'
-import AboutFossilfriFremtidView from './views/AboutFossilfriFremtidView.vue'
-import ActivityView from './views/ActivityView.vue'
-import ContactView from './views/ContactView.vue'
-import HvemStaarBagView from './views/HvemStaarBag.vue'
-import TopView from './views/TopView.vue'
 import BurgerMenu from './components/BurgerMenu.vue'
 import fffLogoForskudtBlue from '@/assets/FossilfriFremtid_logo1_blå.png'
 
@@ -16,35 +10,33 @@ const isMenuActive = ref(false);
 </script>
 
 <template>
-    <div class="burger-toggled-top-bar">
-      <div class="burger-toggled-container">
-            <nav class="burger-toggled-nav" v-if="isMenuActive">
-              <RouterLink to="/#om-fossilfri-fremtid">Hvad er Fossilfri Fremtid?</RouterLink>
-              <RouterLink to="/#om-elly-luke">Hvad er Elly-Luke?</RouterLink>
-              <RouterLink to="/#hvem-staar-bag">Hvem står bag?</RouterLink>
-              <RouterLink to="/#aktiviteter">Bliv en del af kampagnen</RouterLink>
-              <RouterLink to="/#kontakt">Kontakt</RouterLink>
-            </nav>
-      </div>
-      <BurgerMenu @toggle-menu=" isMenuActive = !isMenuActive " :active="isMenuActive"></BurgerMenu>
-    </div>
-    <header>
-
-      <div class="top-bar">
-        <RouterLink to="/#top">
-          <img alt="fossilfri fremtid logo" class="logo" src="@/assets/FossilfriFremtid_logo2_blå_transparent.png" width="125" height="125" />
-        </RouterLink>
-
-        <div class="wrapper">
-          <nav class="default-nav">
+  <header class="burger-toggled-top-bar">
+    <div class="burger-toggled-container">
+          <nav class="burger-toggled-nav" v-if="isMenuActive">
             <RouterLink to="/#om-fossilfri-fremtid">Hvad er Fossilfri Fremtid?</RouterLink>
             <RouterLink to="/#om-elly-luke">Hvad er Elly-Luke?</RouterLink>
             <RouterLink to="/#hvem-staar-bag">Hvem står bag?</RouterLink>
             <RouterLink to="/#aktiviteter">Bliv en del af kampagnen</RouterLink>
             <RouterLink to="/#kontakt">Kontakt</RouterLink>
           </nav>
-        </div>
-      </div>
+    </div>
+    <BurgerMenu @toggle-menu=" isMenuActive = !isMenuActive " :active="isMenuActive"></BurgerMenu>
+  </header>
+
+  <header class="top-bar">
+    <RouterLink to="/#top">
+      <img alt="fossilfri fremtid logo" class="logo" src="@/assets/FossilfriFremtid_logo2_blå_transparent.png" width="125" height="125" />
+    </RouterLink>
+
+    <div class="wrapper">
+      <nav class="default-nav">
+        <RouterLink to="/#om-fossilfri-fremtid">Hvad er Fossilfri Fremtid?</RouterLink>
+        <RouterLink to="/#om-elly-luke">Hvad er Elly-Luke?</RouterLink>
+        <RouterLink to="/#hvem-staar-bag">Hvem står bag?</RouterLink>
+        <RouterLink to="/#aktiviteter">Bliv en del af kampagnen</RouterLink>
+        <RouterLink to="/#kontakt">Kontakt</RouterLink>
+      </nav>
+    </div>
   </header>
   
   <RouterView></RouterView>
@@ -96,10 +88,6 @@ main {
   flex-direction: column;
   justify-content: start;
   padding: 1em 4em 1em 1em;
-}
-
-header {
-  margin-top: 0;
 }
 
 .top-bar{
@@ -155,7 +143,6 @@ footer a:first-of-type {
 .default-nav {
   width: 100%;
   text-align: center;
-  /* margin-top: 2rem; */
   display: flex;
   flex-direction: column;
 }
@@ -179,12 +166,6 @@ nav a.router-link-exact-active:hover {
 }
 
 @media (min-width: 1024px) {
-  /* header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  } */
-
   .top-bar{
     display: flex;
     place-items: center;
@@ -196,7 +177,7 @@ nav a.router-link-exact-active:hover {
     margin: 0 2rem 0 0;
   }
 
-  header .wrapper {
+  .wrapper {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
