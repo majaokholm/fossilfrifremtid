@@ -49,7 +49,7 @@
 
 .text {
   flex: 1; /* Allow the text to take up remaining space */
-  min-width: 500px;
+  min-width: 40%;
 }
 
 .image {
