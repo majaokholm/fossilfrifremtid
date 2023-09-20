@@ -8,11 +8,10 @@
         <br>
         <br>
         <br>
-        <div class="button-container">
-          <a href="https://www.borgerforslag.dk/se-og-stoet-forslag/?Id=FT-15740" class="sign-proposal-button">SKRIV UNDER PÅ BORGERFORSLAGET</a>
-          <!-- <p class="sign-proposal-button-label">Skriv under på borgerforslaget</p> -->
-        </div>
-
+        <v-btn>
+          <a href="https://www.borgerforslag.dk/se-og-stoet-forslag/?Id=FT-15740">SKRIV UNDER PÅ BORGERFORSLAGET</a>
+        </v-btn>
+        
       </div>
 
 
