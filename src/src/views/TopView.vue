@@ -3,7 +3,8 @@
 
     <div class="view-container">
       <div class="background-container">
-          <img src="@/assets/test2.jpg" alt="Background Image" />
+  
+          <img src="@/assets/frontpage_image.jpg" alt="Background Image" />
       </div>
       <div class="content-container">
         <div class="text-container">
