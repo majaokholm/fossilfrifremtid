@@ -61,10 +61,10 @@ const isMenuActive = ref(false);
         </a>
         
         <a href="mailto: tagdel@fossilfrifremtid.dk">
-          <i class="fas fa-envelope"></i> tagdel@fossilfrifremtid.dk
+          <i class="fas fa-envelope"></i> Email: tagdel@fossilfrifremtid.dk
         </a>
         <a href="tel:+45 31 52 31 21">
-          <i class="fas fa-phone"></i> Telefon
+          <i class="fas fa-phone"></i> Telefon: +45 31 52 31 21
         </a>
       </div>
       <img class="footer-logo-on-phone" :src="fffLogoForskudtBlue" alt="fossilfri fremtid logo"/>
