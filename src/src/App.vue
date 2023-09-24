@@ -45,13 +45,15 @@ const isMenuActive = ref(false);
 
   <!-- footer section -->
   <footer>
+    
+    <img class="footer-logo" :src="fffLogoForskudtBlue" alt="fossilfri fremtid logo"/>
+    
     <div class="wrapper">
-      <img class="footer-logo" :src="fffLogoForskudtBlue" alt="fossilfri fremtid logo"/>
-      <RouterLink to="/#om-fossilfri-fremtid">Hvad er Fossilfri Fremtid?</RouterLink>
+      <!-- <RouterLink to="/#om-fossilfri-fremtid">Hvad er Fossilfri Fremtid?</RouterLink>
       <RouterLink to="/#om-elly-luke">Hvad er Elly-Luke?</RouterLink>
       <RouterLink to="/#hvem-staar-bag">Hvem står bag?</RouterLink>
       <RouterLink to="/#aktiviteter">Bliv en del af kampagnen</RouterLink>
-      <RouterLink to="/#kontakt">Kontakt</RouterLink>
+      <RouterLink to="/#kontakt">Kontakt</RouterLink> -->
 
        <!-- Social media and contact links -->
       <div class="social-media-links">
@@ -68,8 +70,8 @@ const isMenuActive = ref(false);
         <a href="tel:+45 31 52 31 21">
           <i class="fas fa-phone"></i> Telefon
         </a>
-        </div>
-
+      </div>
+      <img class="footer-logo-on-phone" :src="fffLogoForskudtBlue" alt="fossilfri fremtid logo"/>
     </div>
   </footer>
 </template>
@@ -114,16 +116,20 @@ main {
 footer{
   background-color: #222222;
   width: 100%;
-  text-align: center;
   padding-top: 1em;
-  padding-bottom: 6em;
+  padding-bottom: 3em;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-logo{
+  display: none;
 }
 
-footer .footer-logo {
-  width: 20%;
-  height: auto;
-  padding-left: 1em;
-  float: left;
+.footer-logo-on-phone{
+  display: block;
+  margin: 1rem auto 1rem 1rem;
+  width: 200px;
+  max-width: 60%
 }
 
 footer a.router-link-exact-active {
@@ -169,8 +175,44 @@ nav a.router-link-exact-active:hover {
   border: 0;
 }
 
+.social-media-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
 @media (min-width: 1024px) {
-  .top-bar{
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .footer-logo{
+    display: block;
+    width: 200px;
+    margin-left: 2rem;
+  }
+
+  .footer-logo-on-phone{
+    display: none;
+  }
+
+  .social-media-links {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  }
+
+  .top-bar {
     display: flex;
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
@@ -179,12 +221,6 @@ nav a.router-link-exact-active:hover {
   .logo {
     display: block;
     margin: 0 2rem 0 0;
-  }
-
-  .wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
   }
 
   .burger-toggled-nav{
@@ -201,5 +237,6 @@ nav a.router-link-exact-active:hover {
   .default-nav a{
     margin-left: auto;
   }
+
 }
 </style>
