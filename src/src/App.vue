@@ -26,7 +26,8 @@ const isMenuActive = ref(false);
 
   <header class="top-bar">
     <RouterLink to="/#top">
-      <img alt="fossilfri fremtid logo" class="logo" src="@/assets/FossilfriFremtid_logo2_blå_transparent.png" width="125" height="125" />
+      <img alt="fossilfri fremtid logo" class="logo" src="@/assets/FossilfriFremtid_logo2_blå.png"/>
+      <!-- <img alt="fossilfri fremtid logo" class="logo" src="@/assets/FossilfriFremtid_logo2_blå_transparent.png" width="125" height="125" /> -->
     </RouterLink>
 
     <div class="wrapper">
@@ -49,12 +50,7 @@ const isMenuActive = ref(false);
     <img class="footer-logo" :src="fffLogoForskudtBlue" alt="fossilfri fremtid logo"/>
     
     <div class="wrapper">
-      <!-- <RouterLink to="/#om-fossilfri-fremtid">Hvad er Fossilfri Fremtid?</RouterLink>
-      <RouterLink to="/#om-elly-luke">Hvad er Elly-Luke?</RouterLink>
-      <RouterLink to="/#hvem-staar-bag">Hvem står bag?</RouterLink>
-      <RouterLink to="/#aktiviteter">Bliv en del af kampagnen</RouterLink>
-      <RouterLink to="/#kontakt">Kontakt</RouterLink> -->
-
+      
        <!-- Social media and contact links -->
       <div class="social-media-links">
         <a href="https://www.facebook.com/profile.php?id=61550554145147" target="_blank" rel="noopener noreferrer">
@@ -101,7 +97,8 @@ main {
   box-sizing: border-box;
   padding: 1em 2em;
   line-height: 1.5;
-  height: 150px;
+  height: 75px; /* Adjust the height of the header bar */
+  max-height: 75px; /* Add max-height to ensure it doesn't exceed N pixels */
   position: fixed;
   width: 100%;
   top:0;
@@ -109,8 +106,9 @@ main {
 }
 
 .logo {
-  display: none;
-  margin: 0 auto 2rem;
+  display: block;
+  max-height: 50px; /* Adjust the max-height as needed */
+  margin: 1rem auto; /* Add padding around the logo */
 }
 
 footer{
