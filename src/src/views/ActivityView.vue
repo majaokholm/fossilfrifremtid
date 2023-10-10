@@ -12,15 +12,47 @@
 
       <div class="button-container">
         <RouterLink to="aktiviteter-borger">
-          <button href="" class="read-more-button orange-button">BORGER</button>
+          <v-btn
+            class="tall-button"
+            color="yellow darken-2"
+            dark
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            size="x-large"
+          >
+          <span style="color: black;">BORGER</span>
+          </v-btn>
         </RouterLink>
 
         <RouterLink to="aktiviteter-virksomhed">
-          <button href="" class="read-more-button orange-button">VIRKSOMHED</button>
+          <!-- <button href="" class="read-more-button orange-button">VIRKSOMHED</button> -->
+          <v-btn
+            class="tall-button"
+            color="yellow darken-2"
+            dark
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            size="x-large"
+          >
+          <span style="color: black;">VIRKSOMHED</span>
+          </v-btn>
         </RouterLink>
 
         <RouterLink to="aktiviteter-organisation">
-          <button href="" class="read-more-button orange-button">ORGANISATION</button>
+          <!-- <button href="" class="read-more-button orange-button">ORGANISATION</button> -->
+          <v-btn
+            class="tall-button"
+            color="yellow darken-2"
+            dark
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            size="x-large"
+          >
+          <span style="color: black;">ORGANISATION</span>
+          </v-btn>
         </RouterLink>
       </div> 
     </div>
@@ -50,6 +82,10 @@
   font-weight: bold;
   flex-wrap: nowrap;
   padding: 1em;
+}
+
+.tall-button {
+  height: 60px !important;
 }
 
 /* Define the orange-button class */

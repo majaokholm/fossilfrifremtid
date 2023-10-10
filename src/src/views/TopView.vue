@@ -15,7 +15,7 @@
           href="https://www.borgerforslag.dk/se-og-stoet-forslag/?Id=FT-15740"
           target="_blank"
           rel="noopener noreferrer"
-          large
+          size="x-large"
         >
           <span style="color: black;">SKRIV UNDER PÅ BORGERFORSLAGET</span>
         </v-btn>
@@ -47,7 +47,7 @@
   max-width: 1000px;
   margin: 0 auto;
   position: relative;
-  padding: 180px 4em 4em;
+  padding-top: 180px;
 }
 
 .text-container {
