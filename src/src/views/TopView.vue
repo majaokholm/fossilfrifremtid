@@ -47,7 +47,9 @@
   max-width: 1000px;
   margin: 0 auto;
   position: relative;
-  padding-top: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .text-container {
