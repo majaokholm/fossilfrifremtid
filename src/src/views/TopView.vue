@@ -1,8 +1,6 @@
 <template>
   <div class="view-container">
-    <div class="background-container">
-      <img src="@/assets/frontpage_image.jpg" alt="Background Image" />
-    </div>
+    <div class="filter-container">
     <div class="content-container">
       <div class="text-container">
         <h1 class="white-text large-text">Den danske regering vil åbne for ny olie- og gasudvinding i Elly-Luke-feltet.</h1>
@@ -23,25 +21,25 @@
         </v-btn>
       </div>
     </div>
+    </div>
   </div>
 </template>
 
 <style scoped>
-.background-container {
-  position: absolute;
-  top: 75px;
-  left: 0;
-  width: 100%;
-  height: calc(100% - 75px);
-  background-color: black;
+.view-container{
+  background-image: url('@/assets/frontpage_image.jpg');
+  background-size: cover;
+  padding: 0;
+  display: block;
+  position: relative;
 }
 
-.background-container img {
-  width: 100%;
+.filter-container{
   height: 100%;
-  object-fit: cover;
-  filter: brightness(0.5);
-  object-fit: cover;
+  width: 100%;
+  backdrop-filter: brightness(0.5);
+  display: flex;
+  position: absolute;
 }
 
 .content-container {
@@ -49,6 +47,7 @@
   max-width: 1000px;
   margin: 0 auto;
   position: relative;
+  padding: 180px 4em 4em;
 }
 
 .text-container {

@@ -83,6 +83,7 @@ main {
   background-color: steelblue;
   display: flex;
   justify-content: space-between;
+  z-index: 1;
 }
 
 .burger-toggled-nav {
@@ -103,12 +104,14 @@ main {
   width: 100%;
   top:0;
   display: none;
+  z-index: 1;
 }
 
 .logo {
   display: block;
   max-height: 50px; /* Adjust the max-height as needed */
   margin: 1rem auto; /* Add padding around the logo */
+  max-width: 20vw;
 }
 
 footer{
@@ -165,8 +168,9 @@ nav a.router-link-exact-active:hover {
 
 .default-nav a {
   display: inline-block;
-  padding: 0 1rem;
   border-left: 1px solid var(--color-border);
+  box-sizing: border-box;
+  max-height: 75px;
 }
 
 .default-nav a:first-of-type {
@@ -228,8 +232,8 @@ nav a.router-link-exact-active:hover {
   .default-nav {
     text-align: left;
     padding: 1rem 0;
-    margin-top: 1rem;
     flex-direction: row;
+    gap: 1rem;
   }
 
   .default-nav a{
