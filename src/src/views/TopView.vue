@@ -3,8 +3,8 @@
     <div class="filter-container">
     <div class="content-container">
       <div class="text-container">
-        <h1 class="white-text large-text">Den danske regering vil åbne for ny olie- og gasudvinding i Elly-Luke-feltet.</h1>
-        <h1 class="white-text large-text">Vi kæmper for at stoppe det.</h1>
+        <h1 class="white-text large-text">Vi lukkede Elly-Luke</h1>
+        <h1 class="white-text large-text">Nu lukker vi smuthullerne i Nordsøaftalen</h1>
       </div>
 
       <div class="button-container">

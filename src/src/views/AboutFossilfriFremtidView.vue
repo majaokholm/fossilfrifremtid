@@ -2,25 +2,33 @@
   <div class="view-container container-bg">
     <div>
       <h1 class="main-heading">Hvad er Fossilfri Fremtid?</h1>
-      <p>Fossilfri Fremtid består af børn, unge, familier og gamle fra hele Danmark, som arbejder for at stoppe ny olie- og gasproduktion.</p>
+      <p>Fossilfri Fremtid er en kampagne og en social bevægelse med en divers gruppe af borgere, der kæmper for en fremtid, hvor fossile brændsler bliver i jorden 
+      i overensstemmelse med den gældende klimaforskning og internationale aftaler. Fossilfri Fremtid har allerede haft sin første sejr: Civilt pres fik lukket 
+      gasfeltet Elly-Luke. Det næste store mål er at få lukket smuthullerne i Nordsøaftalen, der muliggør fossil ekspansion i Nordsøen indtil 2050. Sideløbende vil 
+      Fossilfri Fremtid forsøge at blokere allerede planlagt fossil ekspansion i Nordsøen, f.eks. Hejrefeltet, ved at udnytte de erfaringer, vi fik fra arbejdet med 
+      at stoppe Elly-Luke.</p>
 
       <br> 
-      <h2>KAMPAGNENS FORMÅL</h2>
-      <h3>Mål 1</h3>
-      <p>Fossilfri Fremtid arbejder først for at stoppe det nuværende olie- og gasudbud ved Elly-Luke feltet i Nordsøen.</p>
-      <h3>Mål 2</h3>
-      <p>Fossilfri Fremtid arbejder dernæst for at partierne bag Nordsøaftalen fra 2020 genåbner aftalen og fjerner muligheden for fremtidig fossil ekspansion.</p>
+      <h2>Hvordan vil vi gøre det?</h2>
+      <p>Kampagnens styrke er bredden af borgere og aktiviteter, der giver os mange strenge at spille på. Over 200 aktive på tværs af 15+ arbejdsgrupper laver alt fra 
+        politisk lobbyarbejde, online kommunikation, familievenlige kreaværksteder til korsang med det formål at aktivere og mobilisere så bred en folkelig base som muligt, 
+        skabe opmærksomhed om fossil produktion i Nordsøen og lægge maksimalt pres på regeringen og forligspartierne bag Nordsøaftalen.</p>
+        <br>
+        <p>
+        Forudsætningen for Fossilfri Fremtids succes er en velsmurt kampagne med en divers gruppe af aktivister. Kampagnen har tre overordnede strategier:
+      </p>
+      <h3>Strategi 1</h3>
+      <p>Informere og aktivere en bred gruppe af borgere gennem kreativt indhold, borgerforslag og engagerende aktiviteter</p>
+      <h3>Strategi 2</h3>
+      <p>Gå i direkte dialog med relevante politikere + mobilisere storme på sociale medier, hvor vi kommenterer på opslag og koordinerer massemails.</p>
+      <h3>Strategi 3</h3>
+      <p>Forme alliancer med virksomheder og NGO'er, der vil bakke op om sagen, fx gennem åbent brev og andet samarbejde.</p>
     
       <!-- <div class="button-container">
-        <RouterLink to="background">
-          <button href="" class="read-more-button">Baggrund</button>
-        </RouterLink>
-      </div> -->
-      <div class="button-container">
          <RouterLink to="background">
           <a href="/background" class="read-more-link">Læs mere</a>
         </RouterLink>
-      </div>
+      </div> -->
 
     </div>
   </div>

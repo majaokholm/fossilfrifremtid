@@ -61,7 +61,7 @@
 
 <style scoped>
 .container-bg {
-  background-color: #FFF8D8;
+  background-color: #FFB48E;
 }
 
 .button-container {
