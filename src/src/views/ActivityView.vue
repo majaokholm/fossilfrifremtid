@@ -67,6 +67,7 @@
 .button-container {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
   justify-content: space-between;
   width: 100%;
 }
