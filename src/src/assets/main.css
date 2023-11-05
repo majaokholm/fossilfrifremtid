@@ -21,7 +21,7 @@ h1, h2, h3{
   display: flex;
   align-items: center;
   box-sizing: border-box;
-  padding: 180px 4em 4em;
+  padding: 180px 2em 4em;
 }
 
 @media (hover: hover) {
@@ -45,7 +45,7 @@ h1, h2, h3{
   }
 
   .view-container{
-    padding: 100px 12em 4em;
+    padding: 100px 8em 4em;
     width: 100vw;
   }
 }

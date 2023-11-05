@@ -15,8 +15,8 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/om-elly-luke',
-      name: 'om-elly-luke',
+      path: '/fossiler-i-nordsoeen',
+      name: 'fossiler-i-nordsoeen',
       component: AboutEllyLukeDetailed
     },
     {

@@ -15,7 +15,7 @@ const isMenuActive = ref(false);
     <div class="burger-toggled-container">
           <nav class="burger-toggled-nav" v-if="isMenuActive">
             <RouterLink to="/#om-fossilfri-fremtid">Hvad er Fossilfri Fremtid?</RouterLink>
-            <RouterLink to="/#om-elly-luke">Hvad er Elly-Luke?</RouterLink>
+            <RouterLink to="/#fossiler-i-nordsoeen">Fossiler i Nordsøen</RouterLink>
             <!-- <RouterLink to="/#hvem-staar-bag">Hvem står bag?</RouterLink> -->
             <RouterLink to="/#aktiviteter">Bliv en del af kampagnen</RouterLink>
             <RouterLink to="/#kontakt">Kontakt</RouterLink>
@@ -32,7 +32,7 @@ const isMenuActive = ref(false);
     <div class="wrapper">
       <nav class="default-nav">
         <RouterLink to="/#om-fossilfri-fremtid">Hvad er Fossilfri Fremtid?</RouterLink>
-        <RouterLink to="/#om-elly-luke">Hvad er Elly-Luke?</RouterLink>
+        <RouterLink to="/#fossiler-i-nordsoeen">Hvad er Elly-Luke?</RouterLink>
         <!-- <RouterLink to="/#hvem-staar-bag">Hvem står bag?</RouterLink> -->
         <RouterLink to="/#aktiviteter">Bliv en del af kampagnen</RouterLink>
         <RouterLink to="/#kontakt">Kontakt</RouterLink>
