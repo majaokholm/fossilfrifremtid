@@ -50,6 +50,7 @@
 .text {
   flex: 1; /* Allow the text to take up remaining space */
   min-width: 40%;
+  padding: 100px 2em 2em;
 }
 
 .image {

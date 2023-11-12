@@ -1,6 +1,6 @@
 <template>
   <div class="view-container container-bg">
-    <div class="image-container">
+    <div class="image-container left-side-image">
      
     </div>
     <div class="text-side-container">

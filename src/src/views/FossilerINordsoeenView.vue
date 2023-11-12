@@ -12,8 +12,8 @@
     </p>
   
       <div class="button-container">
-           <RouterLink to="fossiler-i-nordsoeen">
-            <a href="/fossiler-i-nordsoeen" class="read-more-link">Læs mere</a>
+           <RouterLink to="om-elly-Luke">
+            <a href="/om-elly-Luke" class="read-more-link">Læs mere</a>
           </RouterLink>
       </div>
   

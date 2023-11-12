@@ -17,9 +17,13 @@ h1, h2, h3{
 }
 
 .image-container{
-  min-height: 100vh;
+  min-height: 400px;
   background-size: cover;
   flex: 1 1 50%;
+}
+
+.left-side-image{
+  display: none
 }
 
 .text-side-container{
@@ -53,6 +57,10 @@ h1, h2, h3{
     /* display: grid;
     grid-template-columns: 1fr 1fr; */
     /* padding: 0 2rem; */
+  }
+
+  .left-side-image{
+    display: initial;
   }
 
   .view-container{

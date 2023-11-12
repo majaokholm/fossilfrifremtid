@@ -12,7 +12,7 @@ import TopView from '../views/TopView.vue'
   <main>
     <TopView id="top"></TopView>
     <AboutFossilfriFremtidView id="om-fossilfri-fremtid"></AboutFossilfriFremtidView>
-    <FossilerINordsoeenView id="fossiler-i-nordsoeen"></FossilerINordsoeenView>
+    <!-- <FossilerINordsoeenView id="fossiler-i-nordsoeen"></FossilerINordsoeenView> -->
     <!-- <HvemStaarBagView id="hvem-staar-bag"></HvemStaarBagView> -->
     <ActivityView id="aktiviteter"></ActivityView>
     <ContactView id="kontakt"></ContactView>

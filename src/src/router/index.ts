@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AboutEllyLukeDetailed from '../views/detailed/AboutEllyLukeDetailed.vue'
+import AboutNordsoeaftalenDetailed from '../views/detailed/AboutNordsoeaftalenDetailed.vue'
+import AboutHejreDetailed from '../views/detailed/AboutHejreDetailed.vue'
 import BorgerDetailed from '../views/detailed/BorgerDetailed.vue'
 import VirksomhedDetailed from '../views/detailed/VirksomhedDetailed.vue'
 import OrganisationDetailed from '../views/detailed/OrganisationDetailed.vue'
@@ -15,9 +17,19 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/fossiler-i-nordsoeen',
-      name: 'fossiler-i-nordsoeen',
+      path: '/om-elly-luke',
+      name: 'om-elly-luke',
       component: AboutEllyLukeDetailed
+    },
+    {
+      path: '/om-nordsoeaftalen',
+      name: 'om-nordsoeaftalen',
+      component: AboutNordsoeaftalenDetailed
+    },
+    {
+      path: '/om-hejre',
+      name: 'om-hejre',
+      component: AboutHejreDetailed
     },
     {
       path: '/aktiviteter-borger',
