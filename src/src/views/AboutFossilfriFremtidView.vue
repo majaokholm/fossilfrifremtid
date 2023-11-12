@@ -1,6 +1,6 @@
 <template>
-  <div class="view-container container-bg">
-    <div>
+  <div class="view-container container-bg" id="om-fossilfri-fremtid">
+    <div class="text-side-container" >
       <h1 class="main-heading">Hvad er Fossilfri Fremtid?</h1>
       <p>Fossilfri Fremtid er en kampagne og en social bevægelse med en divers gruppe af borgere, der kæmper for en fremtid, hvor fossile brændsler bliver i jorden 
       i overensstemmelse med den gældende klimaforskning og internationale aftaler. Fossilfri Fremtid har allerede haft sin første sejr: Civilt pres fik lukket 
@@ -31,6 +31,12 @@
       </div> -->
 
     </div>
+    <div class="image-container">
+     
+    </div>
+  </div>
+  <div>
+
   </div>
 </template>
 
@@ -48,9 +54,6 @@ p {
   margin-bottom: 1em;
 }
 
-.container-bg {
-  background-color: #FFF8D8;
-}
 
 .read-more-link {
   text-decoration: underline; /* Underline the text */
@@ -62,10 +65,15 @@ p {
   margin-top: 0.5em;
   display: inline-block; /* Ensure it behaves like a block-level element */
 }
-</style>
-
-<style scoped>
 .container-bg {
   background-color: #FFB48E;
+}
+
+.image-container{
+  background-color: rgb(79, 118, 191);
+  background-image: url('@/assets/FossilfriFremtid_waves.jpg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 </style>

@@ -1,6 +1,9 @@
 <template>
   <div class="view-container container-bg">
-    <div>
+    <div class="image-container">
+     
+    </div>
+    <div class="text-side-container">
       <h1>Bliv en del af kampagnen</h1>
       <br>
       <p>Vi ved, at vi kan lykkes med at stoppe ny fossil udvinding i Danmark. Men vi har brug for dig, for at vi kan vise politikerne, at vi er mange! 
@@ -70,6 +73,10 @@
   gap: 20px;
   justify-content: space-between;
   width: 100%;
+}
+
+.image-container{
+  background-image: url('@/assets/frontpage_image_min.jpg');
 }
 
 .read-more-button {

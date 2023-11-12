@@ -13,7 +13,7 @@ const isMenuActive = ref(false);
   <!-- header section (only one header should be visible at a time) -->
   <header class="burger-toggled-top-bar">
     <div class="burger-toggled-container">
-          <nav class="burger-toggled-nav" v-if="isMenuActive">
+          <nav class="burger-toggled-nav" v-if="isMenuActive" @click=" isMenuActive = !isMenuActive " :active="isMenuActive">
             <RouterLink to="/#om-fossilfri-fremtid">Hvad er Fossilfri Fremtid?</RouterLink>
             <RouterLink to="/#fossiler-i-nordsoeen">Fossiler i Nordsøen</RouterLink>
             <!-- <RouterLink to="/#hvem-staar-bag">Hvem står bag?</RouterLink> -->

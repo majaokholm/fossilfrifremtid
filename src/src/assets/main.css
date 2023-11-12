@@ -16,12 +16,23 @@ h1, h2, h3{
   font-weight: bold;
 }
 
+.image-container{
+  min-height: 100vh;
+  background-size: cover;
+  flex: 1 1 50%;
+}
+
+.text-side-container{
+  flex-basis: 50%;
+  padding: 100px 2em;
+}
+
 .view-container{
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: stretch;
   box-sizing: border-box;
-  padding: 180px 2em 4em;
 }
 
 @media (hover: hover) {
@@ -45,7 +56,11 @@ h1, h2, h3{
   }
 
   .view-container{
-    padding: 100px 8em 4em;
     width: 100vw;
+    flex-direction: row;
+  }
+
+  .image-container{
+    min-height: initial;
   }
 }
