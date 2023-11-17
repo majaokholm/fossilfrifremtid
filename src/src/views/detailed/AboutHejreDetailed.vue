@@ -16,7 +16,7 @@ De nye planer indebærer opførelsen af en ubemandet platform, der fjernstyres f
 Her bliver olie og gas behandlet, før olien opbevares i en tank på havbunden, før den transporteres i tankskibe til Esbjerg Havn og gassen transporteres i en rørledning til Nybro.
 INEOS sendte en ansøgning med deres planer for Hejre til Energistyrelsen d. 23. december 2022. Projektet miljøkonsekvensrapport, som er udarbejdet af COWI, blev sendt i offentlig høring med deadline 1. september 2023. 
 13. oktober 2023 meddeler Energistyrelsen 7 års forlængelse af licenserne i Hejrefeltet til INEOS, mens selve godkendelsen af projektet lader vente på sig.
-</p>
+</p><br>
 <h1>Konsekvenser af en godkendelse</h1>
 <p>Hejrefeltet er planlagt til at være i drift fra 2027-2046. I det tidsrum forventer Energistyrelsen, at der kan hentes op til 67 millioner tønder olie og 3.5 milliarder kubikmeter gas. 
  Hvis det afbrændes, vil det udlede over 35 millioner ton CO2 - mere end hvad den danske regering forventer at kunne fjerne ved CO2-fangst. Projektet er også en trussel mod den danske del af Vadehavet,
