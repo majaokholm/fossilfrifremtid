@@ -67,7 +67,7 @@ p {
   display: inline-block; /* Ensure it behaves like a block-level element */
 }
 .container-bg {
-  background-color: #FFB48E;
+  background-color: #FFF8D8;
 }
 
 .image-container{

@@ -76,7 +76,11 @@
 }
 
 .image-container{
-  background-image: url('@/assets/frontpage_image_min.jpg');
+  background-color: rgb(79, 118, 191);
+  background-image: url('@/assets/FossilfriFremtid_waves.jpg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .read-more-button {
