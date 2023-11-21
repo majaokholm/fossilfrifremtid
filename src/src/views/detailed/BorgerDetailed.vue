@@ -4,7 +4,7 @@
 
 <template>
     <div class="view-container container-bg">
-      <div>
+      <div class="text-side-container">
       <h1>Borger</h1>
 
       <p>  Vil du være med til at stoppe ny fossil udvinding? Vi har brug for dig! 
@@ -28,4 +28,7 @@
   .container-bg{
         background-color:#FFB48E;
       }
+  .text-side-container{
+  flex-basis: 75%;
+  }
   </style>

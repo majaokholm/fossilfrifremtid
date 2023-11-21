@@ -4,7 +4,7 @@
 
 <template>
     <div class="view-container container-bg">
-      <div>
+      <div class="text-side-container">
       <h1>Virksomhed</h1>
 
       <p> Er I en del af Danmarks grønne fremtid? Så bak op om Fossilfri Fremtid og bidrag til at holde gassen i jorden. 
@@ -37,4 +37,7 @@
   .container-bg{
         background-color:#FFB48E;
       }
+      .text-side-container{
+  flex-basis: 75%;
+  }
   </style>

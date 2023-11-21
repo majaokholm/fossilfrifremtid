@@ -4,7 +4,7 @@
 
 <template>
     <div class="view-container container-bg">
-      <div>
+      <div class="text-side-container">
       <h1>Organisation</h1>
 
     <p>Bakker jeres organisation op om en grøn, retfærdig fremtid? Vær med til at løfte sagen og støtte arbejdet for at holde gassen i jorden. 
@@ -37,4 +37,7 @@
   .container-bg{
         background-color:#FFB48E;
       }
+      .text-side-container{
+  flex-basis: 75%;
+  }
   </style>
