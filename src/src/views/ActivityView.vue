@@ -77,9 +77,9 @@
 
 .image-container{
   background-color: rgb(79, 118, 191);
-  background-image: url('@/assets/FossilfriFremtid_waves.jpg');
+  background-image: url('@/assets/ff_aarhus.jpg');
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 

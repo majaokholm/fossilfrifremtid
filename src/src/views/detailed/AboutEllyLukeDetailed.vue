@@ -4,8 +4,9 @@
 
 <template>
   <div class="view-container container-bg">
-    <div class="content">
-      <!-- Text on the left -->
+    <div class="outer-content">
+      <div class="inner-content">
+        <!-- Text on the left -->
       <div class="text">
         <h1>Hvad er Elly-Luke?</h1>
         <br>
@@ -29,8 +30,9 @@
         <img src="@/assets/ellyluke.png" alt="Image Alt Text">
         <!-- Image Description Text -->
         <p class="image-description">Eksisterende olie- og gasfelter (blå) og Elly-Luke (rød). Kilde: <a href = "https://ens.dk/presse/miniudbud-til-efterforskning-og-indvinding-i-et-afgraenset-omraade-i-nordsoeen">ens.dk</a> </p>
-       
       </div>
+      </div>
+      <div class="image-container"></div>
     </div>
   </div>
 </template>
@@ -40,7 +42,12 @@
   background-color: #FFF8D8;
 }
 
-.content {
+.outer-content {
+  display: flex;
+  flex-direction: column; /* Keep the order of text and image */
+}
+
+.inner-content {
   display: flex;
   flex-direction: row; /* Keep the order of text and image */
   flex-wrap: wrap;
@@ -64,6 +71,15 @@
   max-width: 100%; /* Ensure the image doesn't exceed its container width */
 }
 
+.image-container{
+  background-color: rgb(79, 118, 191);
+  background-image: url('@/assets/banner_stop_Elly_Luke.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+}
+
 .image-description {
   font-size: 14px; /* Adjust the font size as needed */
   margin-top: 10px; /* Add top margin for spacing */
@@ -79,6 +95,14 @@
   .image {
     margin-left: 0; /* Reset the margin for vertical layout */
     margin-top: 20px; /* Add top margin for spacing */
+  }
+
+  .image-container{
+    margin-top: 50px;
+  }
+
+  .inner-content{
+    flex-direction: column;
   }
 }
 </style>

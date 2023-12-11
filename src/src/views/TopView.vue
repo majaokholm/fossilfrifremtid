@@ -27,7 +27,7 @@
 
 <style scoped>
 .view-container{
-  background-image: url('@/assets/frontpage_image_min.jpg');
+  background-image: url('@/assets/frontpage_image_web.jpg');
   background-size: cover;
   padding: 0;
   display: block;
