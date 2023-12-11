@@ -30,6 +30,7 @@
     <p>Få jeres logo på Fossilfri Fremtids hjemmeside, og vis at I tager stilling.  
     </p>
     </div>
+    <div class="image-container"></div>
     </div>
   </template>
   
@@ -37,6 +38,15 @@
   .container-bg{
         background-color:#FFB48E;
       }
+
+      .image-container{
+    background-color: rgb(79, 118, 191);
+    background-image: url('@/assets/FossilfriFremtid_waves.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
       .text-side-container{
   flex-basis: 75%;
   }

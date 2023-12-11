@@ -1,6 +1,6 @@
 <template>
   <div class="view-container container-bg">
-    <div class="image-container left-side-image">
+    <div class="image-container hidden-when-narrow">
      
     </div>
     <div class="text-side-container">
@@ -59,6 +59,7 @@
         </RouterLink>
       </div> 
     </div>
+    <div class="image-container hidden-when-wide"></div>
   </div>
 </template>
 
@@ -77,7 +78,7 @@
 
 .image-container{
   background-color: rgb(79, 118, 191);
-  background-image: url('@/assets/ff_aarhus.jpg');
+  background-image: url('@/assets/kridt.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

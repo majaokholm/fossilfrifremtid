@@ -21,6 +21,7 @@
       <!-- TODO: Link til borgerforslag (også på forsiden) -->
     
     </div>
+    <div class="image-container"></div>
     </div>
   </template>
   
@@ -28,6 +29,12 @@
   .container-bg{
         background-color:#FFB48E;
       }
+  .image-container{
+    background-color: rgb(79, 118, 191);
+    background-image: url('@/assets/ff_aarhus.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;}
   .text-side-container{
   flex-basis: 75%;
   }
