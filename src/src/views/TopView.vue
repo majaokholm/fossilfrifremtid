@@ -3,23 +3,29 @@
     <div class="filter-container">
     <div class="content-container">
       <div class="text-container">
-        <h1 class="white-text large-text">Vi lukkede Elly-Luke</h1>
-        <h1 class="white-text large-text">Nu lukker vi smuthullerne i Nordsøaftalen</h1>
+        <h1 class="white-text large-text">Ikke flere olie- og gasfelter i Nordsøen</h1>
+        <h1 class="white-text large-text">Vi stoppede Elly-Luke</h1>
+        <h1 class="white-text large-text">Nu stopper vi Hejre</h1>
       </div>
 
+      <!-- <RouterLink to="om-hejre">
+            <a href="/om-hejre" class="read-more-link">Luk oliefeltet Hejre</a>
+          </RouterLink><br> -->
+
+    <RouterLink to="om-hejre">
       <div class="button-container">
         <v-btn
           class="tall-button"
           color="yellow darken-2"
           dark
-          href="https://www.borgerforslag.dk/se-og-stoet-forslag/?Id=FT-15740"
-          target="_blank"
+          href="/om-hejre"
           rel="noopener noreferrer"
           size="x-large"
         >
-          <span style="color: black;">SKRIV UNDER PÅ BORGERFORSLAGET</span>
-        </v-btn>
+          <span style="color: black;">LÆS MERE OM HEJREFELTET</span>
+        </v-btn>   
       </div>
+    </RouterLink>
     </div>
     </div>
   </div>
@@ -27,7 +33,7 @@
 
 <style scoped>
 .view-container{
-  background-image: url('@/assets/frontpage_image_web.jpg');
+  background-image: url('@/assets/frontpage_image_web_gradient.jpg');
   background-size: cover;
   padding: 0;
   display: block;
