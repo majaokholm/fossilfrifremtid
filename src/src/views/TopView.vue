@@ -3,7 +3,7 @@
     <div class="filter-container">
     <div class="content-container">
       <div class="text-container">
-        <h1 class="white-text large-text">Ikke flere olie- og gasfelter</h1>
+        <h1 class="white-text large-text">Ikke flere olie- og gasfelter i Nordsøen</h1>
         <h1 class="white-text large-text">Vi stoppede Elly-Luke</h1>
         <h1 class="white-text large-text">Nu stopper vi Hejre</h1>
       </div>
