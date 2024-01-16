@@ -4,8 +4,8 @@
     <div class="content-container">
       <div class="text-container">
         <h1 class="white-text large-text">Ikke flere olie- og gasfelter i Nordsøen</h1>
-        <h1 class="white-text large-text">Vi stoppede Elly-Luke</h1>
-        <h1 class="white-text large-text">Nu stopper vi Hejre</h1>
+        <h1 class="white-text large-text">Stop Hejre-feltet</h1>
+        <h1 class="white-text large-text">Hold din del af aftalen, Mette</h1>
       </div>
 
       <!-- <RouterLink to="om-hejre">
@@ -22,10 +22,49 @@
           rel="noopener noreferrer"
           size="x-large"
         >
-          <span style="color: black;">LÆS MERE OM HEJREFELTET</span>
+          <span style="color: black;">FAKTA OM HEJREFELTET</span>
         </v-btn>   
       </div>
     </RouterLink>
+    <div class="button-container">
+        <v-btn
+          class="tall-button"
+          color="yellow darken-2"
+          dark
+          href="https://www.dr.dk/nyheder/viden/klima/danmark-kraever-stop-olie-og-gas-paa-klimatopmoedet-men-vi-slukker-ikke-vores"
+          target="_blank"
+          rel="noopener noreferrer"
+          size="x-large"
+        >
+          <span style="color: black;">ARTIKEL OM HEJREFELTET PÅ DR.DK</span>
+        </v-btn>   
+      </div>
+      <div class="button-container">
+        <v-btn
+          class="tall-button"
+          color="yellow darken-2"
+          dark
+          href="https://www.dgub.dk/blog/der-er-et-nyt-stort-oliefelt-pa-vej-i-nordsoen-og-det-skal-stoppes"
+          target="_blank"
+          rel="noopener noreferrer"
+          size="x-large"
+        >
+          <span style="color: black;">DER ER ET NYT STORT OLIEFELT PÅ VEJ I NORDSØEN</span>
+        </v-btn>   
+      </div>
+      <div class="button-container">
+        <v-btn
+          class="tall-button"
+          color="yellow darken-2"
+          dark
+          href="https://www.instagram.com/fossilfrifremtid/"
+          target="_blank"
+          rel="noopener noreferrer"
+          size="x-large"
+        >
+          <span style="color: black;">VORES INSTAGRAM</span>
+        </v-btn>   
+      </div>
     </div>
     </div>
   </div>
