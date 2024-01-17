@@ -35,14 +35,6 @@ h1, h2, h3{
   padding: 100px 2em;
 }
 
-.view-container{
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  box-sizing: border-box;
-}
-
 @media (hover: hover) {
   a:hover {
     color: #6EAADC;
@@ -72,8 +64,8 @@ h1, h2, h3{
   }
 
   .view-container{
-    width: 100vw;
-    flex-direction: row;
+    width: 100%;
+    flex-direction: column;
   }
 
   .image-container{
